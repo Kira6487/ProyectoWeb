@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - Allison</title>
+    <link href="Style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Barra igual -->
+    <div class="barra">
+
+        <div class="logo-titulo">
+            <img src="images/img01.png" class="logo" alt="Logo Allison">
+
+            <div class="texto">
+                <h1>Allison's</h1>
+                <p>Belleza y Pasion</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Acerca de...</a>
+            <a href="#">Agendar tu cita</a> 
+        </nav>
+
+    </div>
+
+    <!-- FORMULARIO REGISTRO -->
+    <div class="registro-container">
+
+        <form class="registro-form">
+            <h2>Crear Cuenta</h2>
+
+            <input type="text" placeholder="Nombres" required>
+            <input type="text" placeholder="Apellidos" required>
+            <input type="tel" placeholder="Número de teléfono" required>
+            <input type="email" placeholder="Correo electrónico" required>
+
+            <input type="password" placeholder="Contraseña" required>
+            <input type="password" placeholder="Confirmar contraseña" required>
+
+            <!-- Fecha de nacimiento -->
+            <div class="fecha">
+                <select required>
+                    <option value="">Día</option>
+                    <!-- 1-31 -->
+                    <script>
+                        for(let i=1;i<=31;i++){
+                            document.write(`<option>${i}</option>`);
+                        }
+                    </script>
+                </select>
+
+                <select required>
+                    <option value="">Mes</option>
+                    <option>Enero</option>
+                    <option>Febrero</option>
+                    <option>Marzo</option>
+                    <option>Abril</option>
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                    <option>Julio</option>
+                    <option>Agosto</option>
+                    <option>Septiembre</option>
+                    <option>Octubre</option>
+                    <option>Noviembre</option>
+                    <option>Diciembre</option>
+                </select>
+
+                <select required>
+                    <option value="">Año</option>
+                    <script>
+                        for(let i=2026;i>=1950;i--){
+                            document.write(`<option>${i}</option>`);
+                        }
+                    </script>
+                </select>
+            </div>
+
+            <!-- Género -->
+            <select class="genero" required>
+                <option value="">Selecciona tu género</option>
+                <option>Femenino</option>
+                <option>Masculino</option>
+                <option>Otro</option>
+            </select>
+
+            <button type="submit">Registrarse</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
