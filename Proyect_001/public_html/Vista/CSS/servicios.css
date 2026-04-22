@@ -1,0 +1,47 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 21 abr 2026, 22:57:04
+    Author     : eduar
+*/
+
+.titulo-servicios {
+    text-align: center;
+    margin-top: 50px;
+    color: #e75480;
+    font-size: 28px;
+}
+
+.tabla-servicios {
+    width: 85%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 10px gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabla-servicios th {
+    background-color: #e75480;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.tabla-servicios td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-servicios tr:hover {
+    background-color: #ffd1dc;
+}
+
+.tabla-servicios td:first-child {
+    font-weight: bold;
+    color: #e75480;
+}

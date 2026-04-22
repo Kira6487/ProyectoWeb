@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Agendar Cita - Allison</title>
+    <link href="../CSS/main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <header>
+    <div class="barra">
+
+        <div class="logo-titulo">
+            <img src="../images/img01.png" class="logo" alt="Logo Allison"/>
+
+            <div class="texto">
+                <h1>Allison's</h1>
+                <p>Belleza y Pasion</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="#">Acerca de...</a>
+        </nav>
+        
+    </div>
+    </header>
+
+    <div class="cita-container">
+
+        <form class="form-cita">
+            <h2>Agendar Cita</h2>
+
+            <label>Servicio</label>
+            <select id="servicio" required>
+                <option value="">Selecciona un servicio</option>
+                <option>Corte de cabello</option>
+                <option>Manicure</option>
+                <option>Facial</option>
+            </select>
+
+            <label>Fecha</label>
+            <input type="date" id="fecha" required>
+
+            <label>Hora</label>
+            <input type="time" id="hora" required>
+
+            <button type="submit">Agendar</button>
+        </form>
+
+    </div>
+        
+    <script type="module" src="../JS/app.js"></script>
+</body>
+</html>

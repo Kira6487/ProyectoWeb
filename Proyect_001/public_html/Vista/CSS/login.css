@@ -1,0 +1,57 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 21 abr 2026, 22:56:19
+    Author     : eduar
+*/
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.login-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0px 4px 10px gray;
+    text-align: center;
+}
+
+/* TÍTULO */
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #e75480;
+}
+
+/* INPUTS */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* BOTÓN */
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e75480;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* HOVER */
+.login-form button:hover {
+    background-color: #ffd1dc;
+    color: #e75480;
+}
