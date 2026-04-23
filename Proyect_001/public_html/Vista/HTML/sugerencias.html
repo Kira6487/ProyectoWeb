@@ -3,17 +3,16 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
 -->
-
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar Sesión - Allison</title>
-    <link href="../CSS/main.css" rel="stylesheet" type="text/css"/>
+    <title>Sugerencias - Allison</title>
+    <link href="../CSS/main.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header><!-- Barra superior (igual que la principal) -->
+<header>
     <div class="barra">
 
         <div class="logo-titulo">
@@ -35,21 +34,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         </nav>
 
     </div>
-    </header>
-    <!-- Formulario -->
-    <div class="login-container">
+</header>
 
-        <form class="login-form">
-            <h2>Iniciar Sesión</h2>
+<div class="sugerencias-container">
 
-            <input type="email" placeholder="Correo electrónico" required>
+    <form class="form-sugerencia">
+        <h2>Déjanos tu sugerencia</h2>
 
-            <input type="password" placeholder="Contraseña" required>
+        <label>Nombre</label>
+        <input type="text" id="nombre" placeholder="Inicia sesión para autocompletar" readonly>
 
-            <button type="submit">Ingresar</button>
-        </form>
+        <label>Correo</label>
+       <input type="email" id="correo" placeholder="Inicia sesión para autocompletar" readonly>
 
-    </div>
+        <label>Teléfono</label>
+        <input type="text" id="telefono" placeholder="Inicia sesión para autocompletar" readonly>
+
+        <label>Comentario</label>
+        <textarea id="comentario" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</div>
+
 <script type="module" src="../JS/app.js"></script>
+
 </body>
 </html>

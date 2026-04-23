@@ -3,15 +3,17 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
+
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Allison-Pasion y Belleza</title>
+    <title>Allison - Pasión y Belleza</title>
     <link href="../CSS/main.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-    <header>
+
+<header>
     <div class="barra">
     
         <div class="logo-titulo">
@@ -28,44 +30,51 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <a href="productos.html">Productos</a>
             <a href="acerca.html">Acerca de...</a>
             <a href="agendarCita.html">Agendar tu cita</a>
-            <a href="login.html" class="btn-login">Iniciar Sesion</a><!-- comment -->
+            <a href="sugerencias.html">Sugerencias</a>
+            <a href="reclamaciones.html">Libro de Reclamaciones</a>
+            <a href="login.html" class="btn-login">Iniciar Sesion</a>
             <a href="registro.html" class="btn-registro">Registro</a>
-            
         </nav>
 
     </div>
-    </header>
-    
-    <div class="slider">
-        <div class="slides">
-            <img src="../images/img02.jpg" alt=""/>
-            <img src="../images/img03.jpg" alt=""/>
-        </div>
+</header>
+
+<!-- SLIDER -->
+<div class="slider">
+    <div class="slides">
+        <img src="../images/img02.jpg" alt=""/>
+        <img src="../images/img03.jpg" alt=""/>
     </div>
-    
-    <div class="frase">
+</div>
+
+<!-- FRASE -->
+<div class="frase">
     <h2>Realza tu belleza natural</h2>
 </div>
-    
-    <div class="contenedor-mv">
-        <div class="caja">
-            <h2>Nuestra Misión:</h2><!-- comment -->
-            <p>
-                Estar posicionados como lider en bienestar integral y emocional de nuestra ciudad, ofreciendo a nuestros clientes experiencias unicas y personalizadas que superen sus espectativas.
-            </p>
-        </div><!-- comment -->
-        <div class="caja">
-            <h2>Nuestra Visión:</h2>
-            <p> <!-- comment -->
-                Ofrecer servicios inspirados en la belleza natural para promover y resaltar mas la belleza escondidad que tenemos, subiendo la autoestima y amor propio de nuestros clientes, mediante un creativo equipo y muy profesional y el uso de productos de alta calidad.
-            </p>
-        </div>
-            
-     </div>
-    
-   <div class="servicios">
 
-    <div class="servicio">
+<!-- MISION / VISION -->
+<div class="contenedor-mv">
+    <div class="caja">
+        <h2>Nuestra Misión:</h2>
+        <p>
+            Estar posicionados como líder en bienestar integral y emocional de nuestra ciudad,
+            ofreciendo experiencias únicas y personalizadas.
+        </p>
+    </div>
+
+    <div class="caja">
+        <h2>Nuestra Visión:</h2>
+        <p>
+            Resaltar la belleza natural de cada persona, elevando la autoestima con un equipo
+            profesional y productos de alta calidad.
+        </p>
+    </div>
+</div>
+
+<!-- SERVICIOS -->
+<div class="servicios">
+
+    <div class="servicio" data-modal="modal-corte">
         <h3>Corte de cabello</h3>
         <div class="info">
             <p>Estilo moderno personalizado</p>
@@ -73,7 +82,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </div>
     </div>
 
-    <div class="servicio">
+    <div class="servicio" data-modal="modal-manicure">
         <h3>Manicure</h3>
         <div class="info">
             <p>Cuidado completo de uñas</p>
@@ -81,7 +90,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </div>
     </div>
 
-    <div class="servicio">
+    <div class="servicio" data-modal="modal-facial">
         <h3>Facial</h3>
         <div class="info">
             <p>Limpieza profunda y relajación</p>
@@ -90,6 +99,54 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </div>
 
 </div>
+
+<!-- MODALES -->
+
+<div class="modal" id="modal-corte">
+    <div class="modal-content">
+        <span class="cerrar">&times;</span>
+        <h2>Corte de Cabello</h2>
+
+        <div class="galeria">
+            <img src="../images/corte1.jpg" alt=""/>
+            <img src="../images/corte2.png" alt=""/>
+            <img src="../images/corte3.jpg" alt=""/>
+        </div>
+
+        <p>Realizamos cortes modernos, degradados y personalizados según tu estilo y personalidad.</p>
+    </div>
+</div>
+
+<div class="modal" id="modal-manicure">
+    <div class="modal-content">
+        <span class="cerrar">&times;</span>
+        <h2>Manicure</h2>
+
+        <div class="galeria">
+            <img src="../images/manicure1.jpeg" alt=""/>
+            <img src="../images/manicure2.jpg" alt=""/>
+        </div>
+
+        <p>Diseños elegantes y duraderos que resaltan la belleza de tus manos.</p>
+    </div>
+</div>
+
+<div class="modal" id="modal-facial">
+    <div class="modal-content">
+        <span class="cerrar">&times;</span>
+        <h2>Facial</h2>
+
+        <div class="galeria">
+            <img src="../images/facial1.png" alt=""/>
+            <img src="../images/facial2.jpeg" alt=""/>
+        </div>
+
+        <p>Tratamientos que limpian, hidratan y rejuvenecen tu piel para un look natural.</p>
+    </div>
+</div>
+
 <script type="module" src="../JS/app.js"></script>
+
 </body>
 </html>
+

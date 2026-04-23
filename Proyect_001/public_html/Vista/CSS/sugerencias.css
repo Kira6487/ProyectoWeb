@@ -1,0 +1,67 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 23 abr. 2026, 12:38:51 p. m.
+    Author     : Usuario
+*/
+
+.sugerencias-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+}
+
+.form-sugerencia {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0px 4px 10px gray;
+    text-align: center;
+}
+
+.form-sugerencia h2 {
+    color: #e75480;
+    margin-bottom: 20px;
+}
+
+.form-sugerencia label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-sugerencia input,
+.form-sugerencia textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Campos bloqueados */
+.form-sugerencia input[readonly] {
+    background-color: #f0f0f0;
+}
+
+.form-sugerencia button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #e75480;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-sugerencia button:hover {
+    background-color: #ffd1dc;
+    color: #e75480;
+}

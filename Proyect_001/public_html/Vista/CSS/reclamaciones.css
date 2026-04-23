@@ -1,0 +1,80 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 23 abr. 2026, 2:45:49 p. m.
+    Author     : Usuario
+*/
+
+.reclamaciones-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.form-reclamacion {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0px 4px 10px gray;
+}
+
+.form-reclamacion h2 {
+    text-align: center;
+    color: #e75480;
+    margin-bottom: 20px;
+}
+
+.seccion {
+    margin-bottom: 20px;
+    border-top: 2px solid #f5f5f5;
+    padding-top: 15px;
+}
+
+.seccion h3 {
+    color: #e75480;
+    margin-bottom: 10px;
+}
+
+.form-reclamacion label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-reclamacion input,
+.form-reclamacion select,
+.form-reclamacion textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-reclamacion textarea {
+    resize: vertical;
+}
+
+.form-reclamacion input[readonly] {
+    background-color: #f0f0f0;
+}
+
+.form-reclamacion button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #e75480;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-reclamacion button:hover {
+    background-color: #ffd1dc;
+    color: #e75480;
+}

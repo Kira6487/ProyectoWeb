@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Libro de Reclamaciones</title>
+    <link href="../CSS/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="barra">
+
+        <div class="logo-titulo">
+            <img src="../images/img01.png" class="logo">
+            <div class="texto">
+                <h1>Allison's</h1>
+                <p>Belleza y Pasion</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="acerca.html">Acerca de</a>
+            <a href="agendarCita.html">Agendar tu cita</a> 
+            <a href="sugerencias.html">Sugerencias</a>
+            <a href="reclamaciones.html">Libro de Reclamaciones</a>
+        </nav>
+
+    </div>
+</header>
+
+<div class="reclamaciones-container">
+
+<form class="form-reclamacion">
+
+<h2>Libro de Reclamaciones</h2>
+
+<!-- SECCIÓN 1 -->
+<div class="seccion">
+<h3>Identificación del consumidor reclamante</h3>
+
+<label>Nombre</label>
+<input type="text" id="nombre" readonly placeholder="Inicia sesión">
+
+<label>Domicilio</label>
+<input type="text" id="domicilio" required>
+
+<label>Tipo de Documento</label>
+<select id="tipoDoc">
+    <option>DNI</option>
+    <option>CE</option>
+    <option>RUC</option>
+</select>
+
+<label>Número de Documento</label>
+<input type="text" id="numeroDoc" required>
+
+<label>Teléfono</label>
+<input type="text" id="telefono" readonly placeholder="Inicia sesión">
+
+<label>Correo Electrónico</label>
+<input type="email" id="correo" readonly placeholder="Inicia sesión">
+
+</div>
+
+<!-- SECCIÓN 2 -->
+<div class="seccion">
+<h3>Identificación del bien contratado</h3>
+
+<label>Tipo de Bien</label>
+<select id="tipoBien">
+    <option>Producto</option>
+    <option>Servicio</option>
+</select>
+
+<label>Monto Reclamado</label>
+<input type="number" id="monto">
+
+<label>Descripción</label>
+<textarea id="descripcion"></textarea>
+
+</div>
+
+<!-- SECCIÓN 3 -->
+<div class="seccion">
+<h3>Detalle de la reclamación y pedido</h3>
+
+<label>Tipo</label>
+<select id="tipoReclamo">
+    <option>Reclamo</option>
+    <option>Queja</option>
+</select>
+
+<label>Detalle</label>
+<textarea id="detalle" required></textarea>
+
+<label>Pedido</label>
+<textarea id="pedido" required></textarea>
+
+</div>
+
+<button type="submit">Enviar Hoja de Reclamación</button>
+
+</form>
+
+</div>
+
+<script type="module" src="../JS/app.js"></script>
+
+</body>
+</html>
